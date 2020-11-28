@@ -1,0 +1,115 @@
+input[type="search"],
+input[type="text"],
+input[type="password"] {
+    background-color: #bfbfbf;
+    outline: none;
+    width: 30%;
+    margin-left: 15px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    background: #248187;
+    width: 100px;
+    margin: 0 1px 5px 4px;
+}
+
+.header {
+
+    padding-left: 5%;
+    background-color: #bfbfbf;
+    height: 150px;
+    font-size: 1em;
+    margin-left: 0%;
+    margin-right: 0%;
+}
+
+.logo,
+.logo_text {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo_text h1,
+.logo_text h2 {
+    margin: 0, 0, 0, 9px;
+    font: normal, 300% 'century gothic', arial, sans-serif;
+}
+
+.logo_text h1 a,
+.logo_text h1 a:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+.logo_text h2 {
+    font-size: 0.9em;
+    padding: 4px 0 0 4px;
+}
+
+.menu-bar {
+    margin-left: 10%;
+}
+
+ul.menu {
+    border: solid 1px #f1f1ff;
+    float: left;
+    margin: 0 0 0 12.5%;
+}
+
+ul.menu li {
+    display: block;
+    float: left;
+    padding: 0 0 0 100px;
+    list-style: none;
+    margin: 1px 2px 0 0;
+}
+
+ul.menu li a {
+    color: black;
+    text-decoration: none;
+}
+
+ul.menu a:hover {
+    color: black;
+}
+
+.site-content {
+    border: solid 1px #bfbfbf;
+    width: 888px;
+    overflow: hidden;
+    height: 500px;
+    margin: 20px auto 0 auto;
+}
+
+.sitebar-container {
+    border: solid 1px #bfbfbf;
+    float: right;
+    width: 222px;
+
+}
+
+.sitebar {
+    float: right;
+    width: 220px;
+    background-color: red;
+    border: solid 0 #bfbfbf;
+    border-radius: 10px;
+    margin: 12px 1px 12px 5px;
+}
+
+.btn {
+    cursor: progress;
+}
+
+ul.footer-menu {
+    border: solid 1px #f1f1ff;
+    float: left;
+    margin: 0 0 0 15%;
+    height: 200px;
+}
+
+ul.footer-menu li {
+    float: left;
+    margin: 10px 100px 0;
+}
