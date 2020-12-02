@@ -30,7 +30,7 @@ var obj = {
             }
         }
     },
-    detectDayBudget: () => obj.moneyPerDay = (obj.objMomey / 30).toFixed(),
+    detectDayBudget: () => moneyPerDay = (objMomey / 30).toFixed(),
     detectLevel: () => {
         if (money <= 200) {
             console.log("мало");
@@ -43,11 +43,11 @@ var obj = {
         }
     },
     checkSaving: () => {
-        if (obj.savings) {
+        if (savings) {
             let money = +prompt("Какова сумма накоплений ?","");
             let per = +prompt("Под какой процент ?","");
-            obj.monthIncome = money * per / 12 / 100;
-            alert("Ежемесячный доход с депозита " + obj.monthIncome + " рублей");
+            monthIncome = money * per / 12 / 100;
+            alert("Ежемесячный доход с депозита " + monthIncome + " рублей");
         }
     },
     chooseOptExpenses: () => {
@@ -57,12 +57,31 @@ var obj = {
         }
     },
     chooseIncome:()=> {
-    	let items = prompt("Что принесет дополнительный доход ?(перечисли через запятую)","");
-    	console.log(typeof(items)=="string");
+        while(true){
+        let items = prompt("Что принесет дополнительный доход ?(перечисли через запятую)","");
+        if(typeof(items)=="string"&& items.length > 0 && items != null){
+            let massNum = items.split(",");
+            massNum.forEach(item =>{
+                if (!isNaN(+item)) {
+                    obj.income.push(+item);   
+                }
+            });
+            break;
+        }
+    }
+
+},
+    getIncome: ()=>{
+        let text = "Способы доп заработка: ";
+        obj.income.forEach((i,num) => {
+            text+= "\n"+(num+1)+". "+i+";"  
+        });
+        alert(text);
     }
 
 };
 
 obj.chooseIncome();
+obj.getIncome();
 
 console.log(obj);

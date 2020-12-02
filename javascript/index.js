@@ -225,11 +225,22 @@ function User(name, age){
 	this.name = name;
 	this.age = age;
 }
+//методы объекта
 User.prototype = {
 	sleep: () => {
 		console.log("sleep "+User.name);
 	}
 };
-
 var john = new User("John", 15);
 console.log(john.age);
+//проверка на NaN
+isNaN(john);
+//способы конвертации одного типа данных в другой
+//привращаем строку в число 
+var textNumber = "15";
+console.log(typeof(Number(textNumber)));
+console.log(typeof(+textNumber));
+console.log(typeof(parseInt(textNumber)));
+//привести к Boolean (!=0 - true, = 0/null - false)
+console.log(!!+textNumber);
+console.log(Boolean(+textNumber));
